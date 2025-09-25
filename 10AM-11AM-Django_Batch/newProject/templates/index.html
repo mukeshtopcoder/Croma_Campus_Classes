@@ -1,0 +1,65 @@
+<html>
+    <head>
+        {% comment %} Python Scripting {% endcomment %}
+        <title>{{title}}</title>
+    </head>
+    <body>
+        <h1>Welcome, To {{company}}</h1>
+        <h3>Services : {{services}}</h3>
+        <ol>
+        {% for s in services %}
+        <li>{{s}}</li>
+        {% endfor %}
+        </ol>
+
+        {% for s in services %}
+        {{forloop.counter}} {{s}}<br>
+        {% endfor %}
+
+        {% for s in services %}
+        {{forloop.counter0}} {{s}}<br>
+        {% endfor %}
+
+        {% for s in services %}
+        {{forloop.revcounter}} {{s}}<br>
+        {% endfor %}
+
+        {% for s in services %}
+        {{forloop.revcounter0}} {{s}}<br>
+        {% endfor %}
+
+        {% for s in services %}
+        {{forloop.first}} {{s}}<br>
+        {% endfor %}
+
+        {% for s in services %}
+        {{forloop.last}} {{s}}<br>
+        {% endfor %}
+
+        <h2>Employee Information</h2>
+        <table border=1>
+            <tr>
+                <th>Name</th><th>Address</th>
+            </tr>
+        {% for e in details %}
+            <tr>
+                <td>{{e.name}}</td><td>{{e.address}}</td>
+            </tr>
+        {% endfor %}
+        </table>
+
+        <h2>Employee Information</h2>
+        <table border=1>
+            <tr>
+                <th>Name</th><th>Address</th>
+            </tr>
+        {% for e in details %}
+            <tr>
+                {% if e.address == 'Noida' %}
+                <td>{{e.name}}</td><td>{{e.address}}</td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+        </table>
+    </body>
+</html>
