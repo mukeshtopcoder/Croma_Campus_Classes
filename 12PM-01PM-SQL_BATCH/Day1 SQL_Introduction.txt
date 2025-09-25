@@ -1,0 +1,30 @@
+Data
+Database
+Database Management System  (DBMS)
+Example DBMS:-
+MySQL , SQL Server , PSQL , Oracle etc
+
+SQL:- Structure Query Language
+SQL works on Commands
+
+DDL- Data Definition Lanaguage
+to create SCHEMA (Structure of DB) 
+CREATE , ALTER , DROP
+
+
+DML- Data Manipulation Language
+INSERT , SELECT , DELETE , UPDATE
+
+TCL- Transaction Control Language
+DCL- Data Control Language
+
+
+
+# DDL :- Data Definition Language
+# CREATE DROP ALTER
+/*
+How to create a database.
+CREATE DATABASE database_name;
+*/
+CREATE DATABASE school;
+DROP DATABASE school;
