@@ -1,0 +1,55 @@
+# DDL :- Data Definition Language
+# It is use to create schema of a database.
+# CREATE , ALTER , DROP
+/*
+How to create a database
+CRAETE DATABASE databasee_name;
+
+How to select a database
+USE database_name;
+
+How to create a table.
+CREATE TABLE table_name(
+col1_name Data_Type , 
+col2_name Data_type ,
+...
+);
+*/
+CREATE DATABASE school;
+USE school;
+CREATE TABLE student(
+rollno INT ,
+sname TEXT ,
+sadd TEXT ,
+sclass TEXT
+);
+ALTER TABLE student ADD COLUMN semail TEXT;
+DESCRIBE student;
+ALTER TABLE student DROP COLUMN sadd;
+
+ALTER TABLE student ADD COLUMN sfee INT;
+ALTER TABLE student MODIFY COLUMN sfee DECIMAL(8,2);
+ALTER TABLE student RENAME COLUMN sfee TO fee;
+DESCRIBE student;
+
+# DML :- DATA MANIPULATION LANGUAGE
+# INSERT , SELECT , UPDATE , DELETE
+/*
+INSERT INTO table_name VALUE(val1,val2,val3..);
+*/
+DESCRIBE student;
+INSERT INTO student 
+VALUE(101,'Rahul','XII','rahul@gmail.com',2753.38);
+SELECT rollno,sname,sclass,semail,fee FROM student;
+SELECT * FROM student;
+SELECT rollno,sname FROM student;
+
+INSERT INTO student(rollno,sname,sclass,fee)
+VALUE(102,'Raman Singh','XI',7523.35);
+
+SET SQL_SAFE_UPDATES  = 0;
+
+UPDATE student SET semail='raman12@gmail.com' 
+WHERE rollno=102;
+
+SELECT * FROM student;

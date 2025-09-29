@@ -122,7 +122,6 @@ for i in s:
 print(st)
 
 
-"""
 s = 'AmAn KuMaR'
 st = ''
 for i in s:
@@ -133,6 +132,18 @@ for i in s:
     else:
         st = st+i
 print(st)
+
+
+Right Rotate
+[1,2,3,4,5] rotated by 2 → [4,5,1,2,3] Right Rotate
+
+"""
+li = [1,2,3,4,5]
+rotate = 2
+for i in range(rotate):
+    li.insert(0,li.pop())
+print(li)
+
 
 
 
