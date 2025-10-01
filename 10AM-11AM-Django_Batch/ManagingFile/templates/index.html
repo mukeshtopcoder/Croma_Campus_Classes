@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+    <head>
+        <title>Django Template</title>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <body>
+        <h1>Welcome to Django!</h1>
+        <h3>Name : {{name}}</h3>
+        <h3>Age : {{age}}</h3>
+        <h3>Address : {{address}}</h3>
+        {% if is_login %}
+            <h2>User is Logged In</h2>
+        {% else %}
+            <h2>User is Not Logged In</h2>
+        {% endif %} 
+        <h3>City Names</h3>
+        <ul>
+            {% for c in city %}
+                <li>{{c}}</li>
+            {% endfor %}
+        </ul>
+        <button onclick="showMessage()">Click Me</button>
+    </body>
+    <script src="{% static 'js/script.js' %}"></script>
+</html> 
