@@ -124,4 +124,4 @@ SELECT * FROM customer
 LEFT OUTER JOIN orders ON customer.cid = orders.cid
 UNION
 SELECT * FROM customer
-RIGHT OUTER JOIN orders ON customer.cid = orders.cid;
+RIGHT OUTER JOIN orders ON customer.cid = orders.cid; 
