@@ -1,0 +1,17 @@
+pip install django
+django-admin      (you can see all commands name)
+
+django-admin startproject any_new_project_name
+
+python manage.py runserver
+
+python manage.py migrate 
+
+python manage.py runserver       (/admin)
+python manage.py createsuperuser   
+        - any username
+        - any password
+
+python manage.py runserver      
+        - login with superuser credentials
+
