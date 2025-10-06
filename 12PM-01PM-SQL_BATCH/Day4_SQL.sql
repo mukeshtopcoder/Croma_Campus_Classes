@@ -125,3 +125,15 @@ LEFT OUTER JOIN orders ON customer.cid = orders.cid
 UNION
 SELECT * FROM customer
 RIGHT OUTER JOIN orders ON customer.cid = orders.cid; 
+
+SELECT * FROM customer
+LEFT JOIN orders
+ON customer.cid = orders.cid;
+
+SELECT * FROM product;
+INSERT INTO product VALUES(505,'Hard Disk',5624),(506,'Cabinet',5454),
+(507,'Pan Drive',3460);
+
+# AVG , MAX
+SELECT pname , avg(price) FROM product GROUP BY pname;
+SELECT pname , max(price) FROM product GROUP BY pname;
