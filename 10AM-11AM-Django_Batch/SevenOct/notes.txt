@@ -1,0 +1,3 @@
+MVT
+Model View Controller
+MODEL:- Structure of Database
