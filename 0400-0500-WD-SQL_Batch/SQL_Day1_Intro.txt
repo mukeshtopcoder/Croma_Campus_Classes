@@ -1,0 +1,47 @@
+SQL :- Stucture Query Language
+
+Data
+Database
+Database Management System
+SQL Server , MySQL , Oracle , PostreSQL etc
+
+SQL :- SQL works on commands
+DDL (Data Definition Language)
+CREATE , DROP , ALTER 
+It is use to create SCHEMA(Database Structure)
+
+DML (Data Manipulation Language)
+INSERT , DELETE , UPDATE , SELECT
+to insert read or modify the data
+
+TCL (Transaction Control Language)
+DCL (Data Control Language)
+
+
+SQL => SQL is not case sensitive
+aman = AMAN
+create = CREATE
+
+python =>  print('Hello')  # instruction
+SQL  =>  create database school;  # Query
+
+You can remove code after execution
+You can reuse the code
+
+Syntax of SQL Query
+
+DDL:-
+# WAQ to create a database.
+Syntax:-   CREATE DATABASE database_name;
+
+# WAQ to select a database.
+Syntax:-   USE database_name;
+
+# WAQ to create a table;
+Syntax:- CRAETE TABLE table_name;
+CREATE TABLE table_name(
+col_name1 data_type , 
+col_name2 data_type , 
+col_name3 data_type ,
+.....
+);
