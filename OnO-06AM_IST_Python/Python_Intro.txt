@@ -1,0 +1,81 @@
+Computer:- Computer is an electronic machine which takes 
+input and gives desired output and perform arithmetic(+-*/)
+and logical(and,or,not) operations.
+
+Electricity:-
+AC - Alternative (Electric)
+DC - Direct (Electronic)
+
+Computer's Language
+LLL (Low Level Language)
+1st Generation 
+Machine Level / Binary Lang / 0 and 1
+Computer:- Fast Execution
+Human:- Hard To Understand
+
+
+2nd Gen
+Assembly Language
+1010010111101010100000010100 => MD,CD,DIR (Menomic)
+
+
+HLL (High Level Language) / Programming Language
+3rd Gen
+C, Cobol , Fortran , basic, lisp
+They are very near to english language
+Translator:- Compiler  , Interpreter
+HLL --- Convert ---> LLL
+They are not secure language
+
+
+4th Gen (OOP-> Object Oriented Programming)
+C++ , Java , Python , C# etc
+They are very near to english language
+Translator:- Compiler  , Interpreter
+HLL --- Convert ---> LLL
+
+Python:-
+English:-
+Alphabets -> Words -> Sentence -> Paragraph
+
+Python:-
+Alphabets,    Keyword
+Numbers ,  -> variable  -> Instruction -> Program
+Symbols       Constant
+
+Alphabets:-
+a,b,c,--z , A,B,C--Z  (case sesnsitive)
+a != A
+Aman AMAN aman AMan
+a => 1100001 => 97
+A => 1000001 => 65
+print   ,    Print X
+
+Numbers:-
+-45 , +456 , 24.67 , 5/2 , 4+9j etc
+Special Symbols:-
+~!@$%^&*()_+{:" etc
+------------------------------------------------------
+Keyword (Reserved Words) 
+if , else , for , while etc   (36 Keywords)
+
+Variable , constant 
+
+a = 10  (a is assign to 10)
+variable , constant
+a = 10+20
+10+20 = a   X
+
+------------------------------------------------------
+
+a = 10    #Instruction
+
+------------------------------------------------------
+
+a = 10
+b = 20           # Program
+c = a+b
+print(c)         #  30 Output
+
+
+-----------------------------------------------------
