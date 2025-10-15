@@ -69,19 +69,54 @@ def deleteEmp():
     file1 = open("employee.bin",'rb')
     file2 = open("temp.bin",'ab')
     flag = 0
-    eid = input("\n\t\tEnter Employee ID To Delete : ")
+    eid = input("\n\t   Enter Employee ID To Delete : ")
     try:
-        data = pickle.load(file1)
-        if data==eid:
-            flag = 1
-            pickle.load(file1)
-            pickle.load(file1)
-            pickle.load(file1)
+        while True:
+            data = pickle.load(file1)
+            if data == eid:
+                pickle.load(file1)
+                pickle.load(file1)
+                pickle.load(file1)
+                flag = 1
+            else:
+                pickle.dump(data,file2)
+    except:
+        if flag == 0:
+            print("\n\t\tEmployee Not Found!")
         else:
-            pickle.dump(data,file2)
+            print("\n\t\tEmployee Deleted Successfully!")
+    file1.close()
+    file2.close()
+    os.remove('employee.bin')
+    os.rename('temp.bin','employee.bin')
+    input("\n\t\tPress Enter To Continue...")
+
+# A Method to update information about an employee
+def updateEmp():
+    file1 = open('employee.bin','rb')
+    file2 = open('temp.bin','ab')
+    flag = 0
+    eid = input("\n\t   Enter EID To Update Info : ")
+    try:
+        while True:
+            data = pickle.load(file1)
+            if data == eid:
+                pickle.dump(data,file2)
+                name = pickle.load(file1)
+                pickle.dump(name,file2)
+                pickle.load(file1)
+                pickle.load(file1)
+                print("\t   Employee Name :",name)
+                add = input("\n\t\tEnter New Address : ")
+                sal = input("\t\tEnter New Salary : ")
+                pickle.dump(add,file2)
+                pickle.dump(sal,file2)
+                flag = 1
+            else:
+                pickle.dump(data,file2)
     except:
         if flag==1:
-            print("\n\t\tEmployee Deleted Successfully!")
+            print("\n\t\tEmployee Updated Successfully!")
         else:
             print("\n\t\tEmployee Not Found!")
     file1.close()
@@ -89,7 +124,6 @@ def deleteEmp():
     os.remove('employee.bin')
     os.rename('temp.bin','employee.bin')
     input("\n\t\tPress Enter To Continue...")
-    
 
 # DASHBOARD
 while True:
@@ -113,3 +147,7 @@ while True:
         viewEmp()
     elif ch==4:
         deleteEmp()
+    elif ch==5:
+        updateEmp()
+    else:
+        input("\n\t\tWrong Entered!\n\t\tTry Again!")
