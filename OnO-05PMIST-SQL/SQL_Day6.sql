@@ -1,0 +1,53 @@
+CREATE DATABASE store2;
+USE store2;
+CREATE TABLE customer(
+cid INT PRIMARY KEY AUTO_INCREMENT , 
+cname VARCHAR(100) NOT NULL , 
+cadd VARCHAR(100) NOT NULL , 
+cmobile VARCHAR(15) NOT NULL
+);
+
+INSERT INTO customer VALUES
+(101,'Rahul','Noida','5672573344'),
+(102,'Mohan','Delhi','567762573344'),
+(103,'Rihan','GZB','34562573344'),
+(104,'Mohit','Noida','9862573344')
+;
+
+SELECT * FROM customer;
+
+CREATE TABLE orders(
+oid INT PRIMARY KEY AUTO_INCREMENT , 
+cid INT NOT NULL , 
+pid INT NOT NULL , 
+qty INT NOT NULL ,
+FOREIGN KEY (cid) REFERENCES customer(cid)
+);
+DESCRIBE orders;
+
+INSERT INTO orders(cid,pid,qty) VALUES
+(110,504,5);
+
+SELECT * FROM customer;
+SELECT * FROM orders;
+
+DELETE FROM customer WHERE cid=103;
+DELETE FROM orders WHERE cid=102;
+
+
+DROP TABLE orders;
+CREATE TABLE orders(
+oid INT PRIMARY KEY AUTO_INCREMENT , 
+cid INT NOT NULL , 
+pid INT NOT NULL , 
+qty INT NOT NULL ,
+FOREIGN KEY (cid) REFERENCES customer(cid) ON UPDATE CASCADE ON DELETE CASCADE
+);
+
+
+INSERT INTO orders(cid,pid,qty) VALUES
+(110,502,5);
+SELECT * FROM orders;
+SELECT * FROM customer;
+UPDATE customer SET cid=102 WHERE cid=103;
+DELETE FROM customer WHERE cid=101;
