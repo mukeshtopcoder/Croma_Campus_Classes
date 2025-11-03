@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {{title}} </title>
+    <style>
+        h1{
+            color: white;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>My First Page</h1>
+    <p>{{about}}</p>
+    <h2>{{services}}</h2>
+    <div>
+        {% for x in services %}
+        <h3>Service {{forloop.counter}}:-  {{x}}</h3>
+        {% endfor %}
+    </div>
+    <div>
+        <h2>Student Details</h2>
+        <table border>
+            <tr>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+            {% for stu in student_details %}
+            <tr>
+                <td>{{stu.name}}</td>
+                <td>{{stu.address}}</td>
+            </tr>
+            {% endfor %} 
+        </table>
+    </div>
+</body>
+</html>
