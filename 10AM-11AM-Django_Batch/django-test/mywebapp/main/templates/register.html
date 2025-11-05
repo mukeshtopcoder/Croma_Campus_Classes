@@ -1,0 +1,34 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register | My Web App</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+  <!-- ===== Navbar ===== -->
+
+    {% include "header.html" %}
+
+
+  <main>
+    <form id="registerForm">
+      <input type="text" id="newUser" placeholder="Username" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="newPass" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+  </main>
+
+  {% comment %} social link {% endcomment %}
+  {% include "connect.html" %}
+
+  <!-- ===== Footer ===== -->
+   {% include "footer.html" %}
+
+  <script src="{% static 'script.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | My Web App</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+
+    {% include "header.html" %}
+
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="about-hero">
+    <h2>Welcome to <span>My Web App</span></h2>
+    <p>Your one-stop online store for quality gadgets and accessories at the best prices.</p>
+  </section>
+
+  <!-- ===== OUR STORY ===== -->
+  <main class="about-main">
+    <section class="our-story">
+      <h2>Our Story</h2>
+      <p>
+        Founded in 2025, <strong>My Web App</strong> started with a simple mission — 
+        to make online shopping smooth, affordable, and enjoyable for everyone.
+        From tech gadgets to everyday essentials, we provide high-quality products 
+        with a focus on reliability and customer satisfaction.
+      </p>
+    </section>
+
+    <!-- ===== WHY CHOOSE US ===== -->
+    <section class="why-choose">
+      <h2>Why Choose Us?</h2>
+      <div class="choose-grid">
+        <div class="choose-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/679/679922.png" alt="Quality Products">
+          <h3>Quality Products</h3>
+          <p>We handpick every product to ensure durability and performance.</p>
+        </div>
+        <div class="choose-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="Fast Delivery">
+          <h3>Fast Delivery</h3>
+          <p>Quick and reliable delivery straight to your doorstep.</p>
+        </div>
+        <div class="choose-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="24/7 Support">
+          <h3>24/7 Support</h3>
+          <p>Our friendly support team is always ready to help you.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== OUR TEAM ===== -->
+    <section class="team-section">
+      <h2>Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="CEO">
+          <h3>Chirag Kumar</h3>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="team-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/4140/4140047.png" alt="Manager">
+          <h3>Riya Sharma</h3>
+          <p>Operations Manager</p>
+        </div>
+        <div class="team-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/4333/4333609.png" alt="Developer">
+          <h3>Arjun Patel</h3>
+          <p>Lead Developer</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+   {% include "footer.html" %}
+
+</body>
+</html>

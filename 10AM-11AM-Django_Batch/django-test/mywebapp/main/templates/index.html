@@ -1,0 +1,84 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | My Web Store</title>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+<body>
+
+  <!-- ===== Navbar ===== -->
+
+    {% include "header.html" %}
+
+
+  <!-- ===== Hero Section ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Welcome to My Web Store</h2>
+      <p>Find the best products at unbeatable prices!</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ===== Products Section ===== -->
+  <main>
+  <h2 id="products">Featured Products</h2>
+  <div class="product-grid">
+
+    <div class="product-card">
+      <img src="{% static 'img/headphone.jpg' %} " alt="Wireless Headphones">
+      <h3>Wireless Headphones</h3>
+      <p class="price">₹1,499</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="{% static 'img\smartWatch.jpg' %} " alt="Smart Watch">
+      <h3>Smart Watch</h3>
+      <p class="price">₹2,999</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="{% static 'img/speaker.webp' %} " alt="Bluetooth Speaker">
+      <h3>Bluetooth Speaker</h3>
+      <p class="price">₹1,199</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="{% static 'img/mouse.jpg' %} " alt="Gaming Mouse">
+      <h3>Gaming Mouse</h3>
+      <p class="price">₹899</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="{% static 'img/Keyboard.jpg' %} " alt="USB Keyboard">
+      <h3>USB Keyboard</h3>
+      <p class="price">₹749</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+      <img src="{% static 'img/moniter.webp' %} " alt="LED Monitor">
+      <h3>LED Monitor</h3>
+      <p class="price">₹5,499</p>
+      <button class="btn">Add to Cart</button>
+    </div>
+
+  </div>
+</main>
+
+
+  <!-- ===== Footer ===== -->
+   {% include "footer.html" %}
+
+ <script src="{% static 'script.js' %}"></script>
+</body>
+</html>

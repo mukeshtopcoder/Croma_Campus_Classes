@@ -1,0 +1,10 @@
+  <header>
+  <h1>My Web Store</h1>
+  <nav class="navbar">
+    <a href="{% url 'home' %}" class="nav-link {% if request.path == '/' %} active {% endif %}">Home</a>
+    <a href="{% url 'about' %}" class="nav-link {% if request.path == '/about/' %} active {% endif %}">About</a>
+    <a href="{% url 'contact' %}" class="nav-link {% if request.path == '/contact/' %} active {% endif %}">Contact</a>
+    <a href="{% url 'login' %}" class="nav-link {% if request.path == '/login/' %} active {% endif %}">Login</a>
+    <a href="{% url 'register' %}" class="nav-link {% if request.path == '/register/' %} active {% endif %}">Register</a>
+  </nav>
+</header>
