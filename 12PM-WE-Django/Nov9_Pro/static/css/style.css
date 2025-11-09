@@ -1,0 +1,40 @@
+h1{
+    color:aqua;
+}
+.main{
+    background-image: url('https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWJzdHJhY3R8ZW58MHx8MHx8fDA%3D&fm=jpg&q=60&w=3000');
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+.menu{
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 100%;
+    height: 50px;
+}
+.lmenu{
+    width: 25%;
+    float: left;
+    line-height: 50px;
+    margin-left: 20px;
+    font-size: 25px;
+}
+#abc{
+    color: aqua;
+    
+}
+.rmenu ul li{
+    display: inline-block;
+    font-size: 15px;
+    margin-left: 70px;
+    padding: 13px;
+    transition: 0.5s;
+}
+.rmenu ul li a{
+    text-decoration: none;
+}
+.rmenu ul li:hover{
+    background-color: orange;
+    color: black;
+}
