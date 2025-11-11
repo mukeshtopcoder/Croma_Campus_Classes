@@ -1,0 +1,55 @@
+h1{
+    color: teal;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    background-image: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/red-and-blue-pillars-wallpaper-abstract-background-free-image.jpeg?w=2210&quality=70");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+}
+.menu{
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    height: 50px;
+    width: 100%;
+}
+.lmenu{
+    line-height: 50px;
+    margin-left: 20px;
+    width: 25%;
+    float: left;
+    font-size: 30px;
+}
+#logo{
+    color: aqua;
+}
+.rmenu ul a li{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 16px;
+    margin-left: 60px;
+    /* background-color: orange; */
+    transition: 0.3s;
+}
+.rmenu ul a li:hover{
+    background-color: orange;
+    color: black;
+}
+#active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: orange;
+}
+.data{
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+    margin-top: 200px;
+    font-size: 30px;
+}
