@@ -1,0 +1,28 @@
+SQLSQL (Structure Query Language)
+
+Data
+Database
+Database Management System (DBMS)
+SQL
+
+MySQL (Open Source /Licence)
+SQL Server , Oracle , PostgreSQL 
+
+SQL works on commands
+
+DDL - Data Definition Lang.
+	- CREATE , ALTER , DROP	
+	(to create SCHEMA/ Database's Structure)
+
+DML- Data Manipulation Lang.
+	- INSERT, SELECT, DELETE, UPDATE
+
+DCL - Data Control Lang.
+TCL - Transaction Control Lang.
+
+
+# HOW TO CREATE A DATABASE?
+
+CRAETE DATABASE database_name;
+create database school;
+SQL is not case sensitive.
