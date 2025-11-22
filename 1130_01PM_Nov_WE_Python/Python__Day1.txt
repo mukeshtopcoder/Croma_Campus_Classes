@@ -1,0 +1,87 @@
+Computer:- Computer is an electronic device, which 
+takes input and gives desired output, and perform
+arithmetic(+-*/) and logical(and,or,not > < =)
+operations.
+
+Computer's Language:-
+LLL -> Low Level Language
+1st Gen
+Machine Level, Binary Number , 0 and 1
+10100101111101010100000
+Computer:- Fast Execution
+Human: Hard to understand
+
+2nd Gen
+1000101010000101000000101 => CD , MD , DIR (menomic)
+Assembly Language
+
+HLL - High Level Language
+3rd Gen
+C, Cobol, fortran , basic , pascal , lisp etc
+Very near to english language
+Translator (Compiler , Intreperter)
+HLL  ----- Convert -----> LLL
+They are not secure language
+
+4th Gen (OOP:- Object Orientted Programmings)
+C++, Java , Python , Ruby , C# etc
+Very near to english language
+Translator (Compiler , Intreperter)
+HLL  ----- Convert -----> LLL
+
+
+Python:-
+
+English:-
+Alphabets => Words => Sentence => Paragraph
+
+Python:-
+Alphabets,    Keywords
+Numbers,   => Variables  => Instruction => Program
+Symbols       Constant
+------------------------------------------------
+Alphabets:-
+a,b,c---z , A,B,C----Z (Case Sensitive)
+A != a  (They are not equal)
+AMAN , Aman , aman (all are different from each other)
+A => 1000001 => 65
+a => 1100001 => 97
+A != a
+print  ,  Print X
+
+Numbers:-
+276 , -8365 , 356.78 , 3+7j , 5/2 etc
+Special Symbols:-
+!@#$%^&*()_+{:"} etc
+--------------------------------------------------
+Keywords (Reserved Words)  36 Keywords
+if , else , for , while etc
+
+Variables / Constant
+
+a = 10   ( a is assign to 10 )
+Variable , Constant
+Variable's value can be change
+a = 10
+a = 20
+constant can over write
+
+------------------------------------------
+Instruction
+	
+	a = 10     # Instruction
+
+-------------------------------------------
+
+a = 10
+b = 20           # Program
+c = a+b
+print(c)         #   Output =>  30
+
+---------------------------------------------------
+
+Installation
+https://python.org
+
+
+

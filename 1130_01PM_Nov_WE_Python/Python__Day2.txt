@@ -1,0 +1,20 @@
+BA/BI
+SQL , Excel , Power BI
+BRD , FRD , SRS , DFD , ERD etc
+JIRA , Terneo etc
+
+DA
+SQL , Excel , Power BI , Python + Libraries(N P M S)
+Dataset (historical data)
+(business insights , trends - Hidden information)
+1- Data Collection
+2- Data Cleaning
+	blank/null cell, rows, columns, duplicate
+	remove , replace , repair etc
+3- Data Transformation
+4- Column Transformation
+5- Visualization
+
+Pandas , Numpy , Matplot , Seaborn etc
+
+(0.0% - 1.0%)
