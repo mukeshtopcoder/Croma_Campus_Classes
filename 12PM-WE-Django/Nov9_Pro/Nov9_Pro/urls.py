@@ -26,5 +26,7 @@ urlpatterns = [
     path('status', views.status),
     path('contact', views.contact),
     path('blogs', views.blogs),
+    path('addition', views.addition),
+    path('add', views.add),
     
 ]
