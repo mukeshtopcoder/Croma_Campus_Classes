@@ -21,7 +21,7 @@ from Nov9_Pro import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
-    path('home', views.home),
+    path('index', views.home),
     path('about', views.about),
     path('status', views.status),
     path('contact', views.contact),

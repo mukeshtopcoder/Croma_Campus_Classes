@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 h1{
     color:aqua;
 }
@@ -37,4 +42,10 @@ h1{
 .rmenu ul li:hover{
     background-color: orange;
     color: black;
+}
+
+.active {
+    background-color: greenyellow;
+    color: black;
+    transition: 0.5s;
 }
