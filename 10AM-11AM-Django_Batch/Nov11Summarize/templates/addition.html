@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static "css/style.css" %}" >
+    </head>
+    <body>
+        <div class='main'>
+            {% include "header.html" %}
+            <div class='data'>
+                <center>
+                <h1>ADDITION</h1>
+                <form action='/add' method='GET'>
+                ENTER A NUMBER <input type='number' name='n1'><br>
+                ENTER B NUMBER <input type='number' name='n2'><br>
+                <input type='submit'>
+                <h1>{{output}}</h1>
+                </form>
+                </center>
+            </div>   
+        </div>
+        <script src="static/js/script.js"></script>
+    </body>
+</html>

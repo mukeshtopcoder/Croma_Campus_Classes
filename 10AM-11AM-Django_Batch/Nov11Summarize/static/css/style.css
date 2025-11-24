@@ -52,4 +52,9 @@ h1{
     text-align: center;
     margin-top: 200px;
     font-size: 30px;
+    color: white;
+}
+input{
+    padding: 5px;
+    font-size: 20px;
 }

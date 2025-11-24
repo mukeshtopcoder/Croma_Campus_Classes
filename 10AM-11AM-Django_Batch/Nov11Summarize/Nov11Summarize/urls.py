@@ -21,9 +21,11 @@ from Nov11Summarize import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home),
-    path('home', views.home),
+    path('home/', views.home),
     path('about/', views.about),
-    path('status/', views.status),
+    path('addition/', views.status),
     path('blogs/', views.blogs),
     path('contact/', views.contact),
+    path('add/', views.addition),
+    
 ]
