@@ -2,12 +2,12 @@
                     <div class="lmenu"><span id='abc'>O'</span>RACLE</div>
                     <div class="rmenu">
                         <ul>
-                            <li class="{% if request.path == '/index' or request.path == '/' %}active{% endif %}"><a href="index">Home</a></li>
-                            <li class="{% if request.path == '/about' %}active{% endif %}"><a href="about">About</a></li>
-                            <li class="{% if request.path == '/status' %}active{% endif %}"><a href="status">Status</a></li>
-                            <li class="{% if request.path == '/blogs' %}active{% endif %}"><a href="blogs">Blogs</a></li>
-                            <li class="{% if request.path == '/contact' %}active{% endif %}"><a href="contact">Contactus</a></li>
-                            <li class="{% if request.path == '/addtion' %}active{% endif %}"><a href="addition">Addition</a></li>
+                            <li class="{% if request.path == '/index/' or request.path == '/' %}active{% endif %}"><a href="/index">Home</a></li>
+                            <li class="{% if request.path == '/about/' %}active{% endif %}"><a href="/about">About</a></li>
+                            <li class="{% if request.path == '/status/' %}active{% endif %}"><a href="/status">Status</a></li>
+                            <li class="{% if request.path == '/blogs/' %}active{% endif %}"><a href="/blogs">Blogs</a></li>
+                            <li class="{% if request.path == '/contact/' %}active{% endif %}"><a href="/contact">Contactus</a></li>
+                            <li class="{% if request.path == '/addition/' or request.path == '/add/'%}active{% endif %}"><a href="/addition">Addition</a></li>
                         </ul>
                     </div>
             </div>
