@@ -1,0 +1,34 @@
+CREATE DATABASE school;
+USE school;
+CREATE TABLE student(
+sid INT PRIMARY KEY AUTO_INCREMENT , 
+sname VARCHAR(100) NOT NULL ,
+sadd VARCHAR(100) NOT NULL , 
+cid INT NOT NULL , 
+FOREIGN KEY (cid) REFERENCES course(cid)
+);
+
+CREATE TABLE course(
+cid INT PRIMARY KEY AUTO_INCREMENT , 
+cname VARCHAR(100) NOT NULL ,
+cfee DECIMAL(8,2) NOT NULL , 
+cdesc TEXT
+);
+
+DROP TABLE course;
+
+DELIMITER $$
+CREATE PROCEDURE addStudent(IN sn VARCHAR(100) ,IN sa VARCHAR(100) ,IN cd INT)
+BEGIN
+	INSERT INTO student(sname,sadd,cid) VALUE(sn,sa,cd);
+END $$ DELIMITER ;
+
+DELIMITER $$
+CREATE PROCEDURE addCourse(IN cn VARCHAR(100) ,IN cf DECIMAL(8,2) ,IN cd VARCHAR(100))
+BEGIN
+	INSERT INTO course(cname,cfee,cdesc) VALUE(cn,cf,cd);
+END $$ DELIMITER ;
+USE school;
+DROP PROCEDURE addCourse;
+
+SHOW PROCEDURE STATUS;
