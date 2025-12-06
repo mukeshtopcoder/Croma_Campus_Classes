@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    </head>
+    <body>
+        <h1>Hello India</h1>
+        <button onclick="hello()">Click Here!</button>
+        <img src="{% static 'img/abc.jpg' %}" width=200>
+        <a href="/newpage"><button>Next Page!</button></a>
+        
+    </body>
+    <script src="{% static 'js/script.js' %}" ></script>
+</html>

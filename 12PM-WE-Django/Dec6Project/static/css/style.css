@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: white;
+    background-color: black;
+}
+
+button{
+    padding: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+}
+body{
+    background-image: url("https://marketplace.canva.com/EAGQ4hBhXII/1/0/1600w/canva-blue-abstract-desktop-wallpaper-htGu4av79Lo.jpg");
+}
