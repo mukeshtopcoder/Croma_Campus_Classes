@@ -1,0 +1,67 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+  <div class="card" role="region" aria-label="Registration card">
+    <div>
+      <h1>Create your account</h1>
+      <p class="lead">Quick and easy — only takes a minute. We’ll never share your details.</p>
+
+      <form id="regForm" novalidate>
+        <div class="row">
+          <div class="col">
+            <label for="firstName">First name</label>
+            <input id="firstName" name="firstName" type="text" required minlength="2" placeholder="Ex. Jane" />
+            <div class="error" id="err-firstName"></div>
+          </div>
+          <div class="col">
+            <label for="lastName">Last name</label>
+            <input id="lastName" name="lastName" type="text" required minlength="2" placeholder="Ex. Doe" />
+            <div class="error" id="err-lastName"></div>
+          </div>
+        </div>
+
+        <label for="email">Email address</label>
+        <input id="email" name="email" type="email" required placeholder="you@example.com" />
+        <div class="error" id="err-email"></div>
+
+        <div class="row">
+          <div class="col">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" required minlength="8" placeholder="At least 8 characters" aria-describedby="pwdHelp" />
+            <div class="password-meter" aria-hidden="true"><i id="pwdMeter"></i></div>
+            <div id="pwdHelp" class="small muted">Use 8 or more characters with a mix of letters and numbers.</div>
+            <div class="error" id="err-password"></div>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;align-items:center;margin-top:6px">
+          <button id="submitBtn" class="btn" type="submit">Create account</button>
+          <div id="formMessage" class="muted" role="status" aria-live="polite"></div>
+        </div>
+
+      </form>
+    </div>
+
+    <aside class="right-panel" aria-label="Help">
+      <h2 style="margin-top:0">Why sign up?</h2>
+      <ul class="small">
+        <li>Save your preferences</li>
+        <li>Access member-only features</li>
+        <li>Receive helpful updates</li>
+      </ul>
+
+      <hr style="margin:12px 0;border:none;border-top:1px dashed #eef2ff" />
+      <h3 style="margin:6px 0 6px">Tips for a strong password</h3>
+      <p class="small muted">Use a long passphrase or at least 12 characters with uppercase, lowercase, numbers and symbols.</p>
+    </aside>
+  </div>
+
+  <script src="{% static 'js/script.js'%}"></script>
+</body>
+</html>

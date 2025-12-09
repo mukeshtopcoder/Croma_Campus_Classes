@@ -1,0 +1,23 @@
+:root{ --accent:#4f46e5; --muted:#6b7280; --bg:#f8fafc }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,Arial,sans-serif;background:var(--bg);margin:0;padding:32px;display:flex;align-items:center;justify-content:center;min-height:100vh}
+    .card{background:#fff;border-radius:12px;box-shadow:0 8px 30px rgba(2,6,23,0.08);max-width:880px;width:100%;padding:28px;display:grid;grid-template-columns:1fr 360px;gap:24px}
+    .card h1{margin:0 0 6px;font-size:20px}
+    .card p.lead{margin:0 0 18px;color:var(--muted)}
+    form{display:grid;gap:12px}
+    .row{display:flex;gap:12px}
+    .col{flex:1}
+    label{display:block;font-size:13px;margin-bottom:6px;color:#111827}
+    input[type="text"],input[type="email"],input[type="password"],input[type="tel"],input[type="date"],select{width:100%;padding:10px 12px;border:1px solid #e6edf3;border-radius:8px;font-size:14px}
+    .small{font-size:13px;color:var(--muted)}
+    .muted{color:var(--muted);font-size:13px}
+    .right-panel{padding:12px;border-left:1px dashed #eef2ff}
+    .gender{display:flex;gap:12px;align-items:center}
+    .btn{background:var(--accent);color:white;border:none;padding:10px 14px;border-radius:10px;font-weight:600;cursor:pointer}
+    .btn:disabled{opacity:.55;cursor:not-allowed}
+    .error{color:#dc2626;font-size:13px}
+    .success{color:#16a34a;font-size:13px}
+    .password-meter{height:8px;border-radius:6px;background:#eef2ff;overflow:hidden}
+    .password-meter > i{display:block;height:100%;width:0;background:linear-gradient(90deg,#f97316,#ef4444);transition:width .2s}
+    @media (max-width:880px){.card{grid-template-columns:1fr;padding:18px}}
+  
