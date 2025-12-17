@@ -1,0 +1,15 @@
+a = 10  (a is assign to 10)
+a=> variable , 10=> Constant
+Variable's value can be change
+
+
+a = 10 
+a = 12
+--------------------------------------------------
+a = 10
+b = 20
+c = a+b
+print(c)					Output:-  30
+
+
+https://python.org
