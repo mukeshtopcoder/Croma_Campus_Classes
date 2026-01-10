@@ -28,4 +28,4 @@ function handleClick(obj){
     else
         player="X";
     
-}
+} 
