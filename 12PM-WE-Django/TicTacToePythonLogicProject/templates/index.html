@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1> TIC TAC TOE </h1>
+        <h2>
+
+            {% if winner %}
+                {% if winner == "Draw"%}
+                    Game Draw!
+                {% else %}
+                    Player {{winner}} Wins!
+                {% endif %}
+            {% else %}
+                Player {{player}}' Turn 
+            {% endif %}
+
+        </h2>
+
+        <table border='1' align='center'>
+            {% for i in board %}
+            {% if forloop.counter0|divisibleby:3 %}
+            <tr>
+            {% endif %}
+            <td style="width:60px;height:60px;text-align:center;font-size:30px;">
+                {% if i == "" and not winner %}
+                <form method="POST">
+                    {% csrf_token %}
+                    <input type='hidden' name='cell' value="{{forloop.counter0}}">
+                    <button type="submit" style="width:100%;height:60px;font-size:30px;">
+                        {{i}}
+                    </button>
+                </form>
+                {% else %}
+                    {{ i }}
+                {% endif %}
+            </td>
+            {% if forloop.counter|divisibleby:3 %}
+        </tr>
+        {% endif %}
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href='/reset/'>RESET GAME</a>
+
+        <script src="" async defer></script>
+    </body>
+</html>
