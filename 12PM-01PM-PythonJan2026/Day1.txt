@@ -1,0 +1,61 @@
+Computer:- Computer is an electronic machine, which takes input
+and gives desired output and perform arithmetic(+-*/%) and
+logical(AND OR NOT > < !=) operations.
+
+Electricity
+AC - Alternative Current (Electric)
+DC - Direct Current (Electronic)
+
+Computer works on Binary Language (0 and 1)
+Computer's Language:-
+LLL (Low Level Language)
+1st Gen 
+Machine Level / Binary Langauge (0 and 1)
+10010100101100110101010110101111010101
+Computer:-  Fast Execution 
+Human:-     Hard To Understand
+
+2nd Gen
+1001010100100101010100 => CD MD DIR TREE etc (Menomics)
+Assembly Langauge
+
+
+HLL (High Level Language)/ Programming Language
+3rd Gen (POP :- Procedure Oriented Programming)
+C , Cobol , Fortran , Basic , lisp etc
+They are very near to english language
+Translator:- HLL   --- Convert  ---> LLL
+	Compiler , Interpreter
+They are not secure
+
+4th Gen (OOP :- Object Oriented Programming)
+C++ , Java , Python , R , C# etc 
+They are very near to english language
+Translator:- HLL   --- Convert  ---> LLL
+	Compiler , Interpreter
+
+5th Gen
+AI
+
+--------------------------------------------------------------
+English
+Alphabets -> Words -> Sentence -> Paragraph
+
+Python
+Alphabets,    Keywords
+Numbers ,  => variables  => Instruction => Program
+Symbols       Constant
+
+-------------------------------------------------------------
+Alphabet
+a,b,c,d----z    (Case Sensitive Language) 
+A,B,C-----Z
+a != A  
+Aman , AMAN , aman , AMan
+print   ,  Print   X
+a = 1100001 => 97
+A = 1000001 => 65
+Numbers:-
+45 , -456 , 34.567 , 4+8j etc
+Special Symbol:- 
+!@#%^&*(~)_+}"?>" etc
