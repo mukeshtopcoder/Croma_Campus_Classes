@@ -24,6 +24,7 @@ test_size = st.sidebar.slider("Test Size",0.1 , 0.5 , 0.2)
 # Main Application
 if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
+    df.CreditScore = df.CreditScore.astype(float)
     st.subheader("Dataset Preview")
     st.dataframe(df.head() , use_container_width=True)
     X,y = preprocessing_data(df)
@@ -44,5 +45,13 @@ if uploaded_file is not None:
         ax.set_xlabel("Predicted Value")
         ax.set_ylabel("Actual Value")
         st.pyplot(fig)
+
+    # Feature Distribution
+    st.subheader("Feature Distribution")
+    feature = st.selectbox("Select Feature",df.select_dtypes(include='float').columns)
+    fig , ax = plt.subplots(figsize=(8,3))
+    sns.histplot( df[feature] , ax=ax , kde=True )
+    st.pyplot(fig)
+    st.success("Model Trained Successfully!")
 else:
     st.success("upload Your CSV File!") 
